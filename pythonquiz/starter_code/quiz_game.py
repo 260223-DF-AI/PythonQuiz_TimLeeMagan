@@ -80,9 +80,9 @@ def create_question_bank():
         },
         {
             "question": "What enclosing characters do dictionaries use in Python?",
-            "options": ["A) Parenthesis ()", "B) square brackets []", "C) curly braces \{\}", "D) vertical bar |"],
+            "options": ["A) Parenthesis ()", "B) square brackets []", "C) curly braces {}", "D) vertical bar |"],
             "answer": "C",
-            "explanation": "Dictionaries use \{curly braces\}"
+            "explanation": "Dictionaries use {curly braces}"
         },
         {
             "question": "What is the difference between else and elif?",
@@ -290,6 +290,7 @@ def display_results(score, total):
     # TODO: Display formatted results
     print("=" * 50)
     print("Your Results")
+
     print("=" * 50)
     print(f"Score:        {score}")
     print(f"Percentage:   {score_percent}")
