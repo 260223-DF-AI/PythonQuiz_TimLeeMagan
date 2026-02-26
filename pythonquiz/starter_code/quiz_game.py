@@ -36,6 +36,60 @@ def create_question_bank():
             "answer": "B",
             "explanation": "The 'def' keyword is used to define functions in Python."
         },
+        {
+            "question": "Which of the following will return the number of items in a list?",
+            "options" : ["A) list.length", "B) list.length()", "C) length(list)", "D) len(list)"],
+            "answer" : "D",
+            "explanation" : "len(list) is the only valid function of these."
+        },
+        {
+            "question" : "Which of the following datatypes are immutable?",
+            "options" : ["A) list", "B) string", "C) set", "D) dictionary"],
+            "answer" : "B",
+            "explanation": "The correct answer is B, string. lists are mutable. while the items in sets are immutable, sets themselves are mutable. dictionaries are mutable."
+        },
+        {
+            "question" : "Which of the following bash commands will create a directory?",
+            "options" : ["A) cat", "B) touch", "C) mkdir", "D) cd"],
+            "answer" : "C",
+            "explanation": "The correct answer is C, mkdir. cat prints the contents of a file to the terminal. touch can be used to create a file or update its timestamp of last edit. cd is used for changing current directory."
+        },
+        {
+            "question" : "What data type in Python deals with whole numbers?",
+            "options" : ["A) integer", "B) float", "C) string", "D) double"],
+            "answer" : "A",
+            "explanation": "The answer is A, integer. floats are not whole numbers. strings are sequences of characters, doubles are not in Python."
+        },
+        {
+            "question": "What is the purpose of the str.count() function?",
+            "options" : ["A) Count the total number of character in the string", "B) Count the number of times a given substring occurs in str", "C) Converts the given string to an integer", "D) This function does not exist"],
+            "answer" : "B",
+            "explanation" : "The answer is B. str.count(substring) returns the number of times substring occurs in str."
+        },
+        {
+            "question": "Why is indentation important in Python?",
+            "options": ["A) Python doesn't have end of statement special characters (like ';')", "B) Python doesn't use ( ) or { } to enclose large blocks of code", "C) Python is white space dependent", "D) All of the above"],
+            "answer" : "D",
+            "explanation": "All are true of Python."
+        },
+        {
+            "question": "What is printed with the following statement? print(12 / 3 + 6 * 4)",
+            "options" : ["A) 40.0", "B) 28", "C) 6", "D) 28.0"],
+            "answer" : "D",
+            "explanation" : "The answer is D, 28.0, following PEMDAS. 40.0 and 6 don't follow the order of operations. The inclusion of a / operator means the answer will print as a float with a decimal."
+        },
+        {
+            "question": "What enclosing characters do dictionaries use in Python?",
+            "options": ["A) Parenthesis ()", "B) square brackets []", "C) curly braces \{\}", "D) vertical bar |"],
+            "answer": "C",
+            "explanation": "Dictionaries use \{curly braces\}"
+        },
+        {
+            "question": "What is the difference between else and elif?",
+            "options" : ["A) elif must come after an if while an else does not", "B) elif evaluates a condition while else does not", "C) else evaluates a condition while elif does not", "D) elif doesn't exist in Python; else if must be used"],
+            "answer": "B",
+            "explanation" : "The correct answer is B. else and elif must both follow if. C is the reverse of the correct answer. D is incorrect since elif valid."
+        }
         # TODO: Add 9 more questions covering:
         # - Python syntax and indentation
         # - Data types (strings, lists, dictionaries)
