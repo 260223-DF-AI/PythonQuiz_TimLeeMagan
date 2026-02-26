@@ -227,6 +227,13 @@ def run_quiz(questions):
     
     # TODO: Implement the game loop
     # Hint: Use a for loop with enumerate
+    for i, q in enumerate(questions, start=1):
+        display_question(q,i,total)
+        user_answer = get_user_answer()
+        is_correct = check_answer(q, user_answer)
+        if is_correct:
+            score += 1
+        display_feedback(q, user_answer, is_correct)
     
     return score, total
 
