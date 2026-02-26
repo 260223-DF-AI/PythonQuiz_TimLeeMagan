@@ -261,7 +261,17 @@ def calculate_grade(score, total):
         Letter grade as string
     """
     # TODO: Calculate percentage and return grade
-    pass
+    score_percent = score/total * 100
+    if score_percent >= 90:
+        return "A"
+    elif score_percent >= 80:
+        return "B"
+    elif score_percent >= 70:
+        return "C"
+    elif score_percent >= 60:
+        return "D"
+    return "F"
+
 
 
 def display_results(score, total):
@@ -275,9 +285,28 @@ def display_results(score, total):
     - Encouraging message based on performance
     """
     # TODO: Calculate percentage and grade
+    score_percent = score / total * 100
+    letter_grade = calculate_grade(score, total)
     # TODO: Display formatted results
+    print("=" * 50)
+    print("Your Results")
+    print("=" * 50)
+    print(f"Score:        {score}")
+    print(f"Percentage:   {score_percent}")
+    print(f"Letter grade: {letter_grade}")
+    print()
     # TODO: Add encouragement message
-    pass
+    match(letter_grade):
+        case "A":
+            print("Wow! You must be a Python extrordinaire! I'm so impressed. - Abraham Lincoln")
+        case "B":
+            print("It's not perfection but look at how much you already know. This is pretty good but you can still do better. - Thomas Edison")
+        case "C":
+            print("This is a passing grade. Cs get degrees, but maybe not the big internship. - Teddy Roosevelt")
+        case "D":
+            print("This is passing in some jurisdictions. Ds may also get degrees depending on your school and where you live. C'mon though, you have more in you than that. - Bill Gates, creator of Python")
+        case "F":
+            print("You only learn by failing. Python is really hard but it gets easier - Mahatma Ghandi")
 
 
 # =============================================================================
