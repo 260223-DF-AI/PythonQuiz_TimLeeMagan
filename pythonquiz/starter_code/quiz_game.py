@@ -1,6 +1,9 @@
 # quiz_game.py - Python Quiz Game
 # Starter code for e004-exercise-control-flow (Collaborative Project)
 import os
+RED = '\033[31m'
+GREEN = '\033[32m'
+RESET = '\033[0m'
 
 """
 Python Quiz Game
@@ -185,9 +188,9 @@ def display_feedback(question, user_answer, is_correct):
     """
     # TODO: Display appropriate feedback based on is_correct
     if is_correct:
-        print("Correct")
+        print(GREEN + "Correct!" + RESET)
     else:
-        print(f"Incorrect. The answer was {question["answer"]}")
+        print(RED + f"Incorrect. The answer was {question["answer"]}" + RESET)
     print(f"{question["explanation"]}")
 
 
